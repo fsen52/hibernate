@@ -11,17 +11,35 @@ import javax.persistence.Id;
 
 public class H01_Sehir {
 	
+
 	@Id
-	
 	private int sehirPlaka;
 	
 	private String sehirAd;
 	
-	public H01_Sehir(int sehirPlaka, String sehirAd) {
-		super();
+	private int sehirNufus;
+	
+	
+	public H01_Sehir() {
+		
+		
+	}
+
+	public H01_Sehir(int sehirPlaka, String sehirAd, int sehirNufus) {
+		
 		this.sehirPlaka = sehirPlaka;
 		this.sehirAd = sehirAd;
+		this.sehirNufus = sehirNufus;
 	}
+
+	public int getSehirNufus() {
+		return sehirNufus;
+	}
+
+	public void setSehirNufus(int sehirNufus) {
+		this.sehirNufus = sehirNufus;
+	}
+
 
 	public int getSehirPlaka() {
 		return sehirPlaka;
@@ -39,11 +57,13 @@ public class H01_Sehir {
 		this.sehirAd = sehirAd;
 	}
 
-	
-
 	@Override
 	public String toString() {
-		return "H01_Sehir [sehirPlaka=" + sehirPlaka + ", sehirAd=" + sehirAd + "]";
+		return "H01_Sehir [sehirPlaka=" + sehirPlaka + ", sehirAd=" + sehirAd + ", sehirNufus=" + sehirNufus + "]";
 	}
+
+	
+
+
 
 }
