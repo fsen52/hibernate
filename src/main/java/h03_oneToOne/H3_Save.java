@@ -48,6 +48,13 @@ public class H3_Save {
 		s.save(gunluk2);
 		s.save(gunluk1);
 		
+		
+		System.out.println(
+		
+		gunluk1.getKisi() + " " + gunluk1.getYazilar() + " " + kisi2.getKisiYas() + " " + kisi2.getKisiAd() 
+		
+				);
+		
 		tx.commit();
 		
 		
