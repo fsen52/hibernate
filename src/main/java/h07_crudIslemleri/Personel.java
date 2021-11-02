@@ -14,6 +14,10 @@ public class Personel {
 	private String ad;
 	private String soyad;
 	private int maas;
+	
+	public Personel() {
+		
+	}
 
 	public Personel(String ad, String soyad, int maas) {
 		super();
